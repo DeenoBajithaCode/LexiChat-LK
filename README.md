@@ -18,7 +18,7 @@ This project builds a chatbot that lets users ask questions about the Sri Lankan
 - PyMuPDF or pdfplumber
 - sentence-transformers
 - faiss-cpu or chromadb
-- Flask
+- Django
 
 Install dependencies:
 
