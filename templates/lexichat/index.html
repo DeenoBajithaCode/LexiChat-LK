@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LexiChat LK</title>
+</head>
+<body>
+    <h1>Welcome to LexiChat LK</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="question">Ask a question about the Constitution:</label><br>
+        <input type="text" name="question" id="question" size="60"><br><br>
+        <input type="submit" value="Ask">
+    </form>
+    {% if answer %}
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>

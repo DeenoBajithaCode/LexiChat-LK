@@ -1,0 +1,7 @@
+django>=4.0
+openai
+langchain
+sentence-transformers
+faiss-cpu
+PyMuPDF
+tqdm
