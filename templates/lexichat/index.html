@@ -4,14 +4,15 @@
     <title>LexiChat LK</title>
 </head>
 <body>
-    <h1>Welcome to LexiChat LK</h1>
+    <h1>LexiChat LK - Ask Your Constitution</h1>
     <form method="post">
         {% csrf_token %}
-        <label for="question">Ask a question about the Constitution:</label><br>
-        <input type="text" name="question" id="question" size="60"><br><br>
-        <input type="submit" value="Ask">
+        {{ form.as_p }}
+        <button type="submit">Ask</button>
     </form>
+
     {% if answer %}
+        <hr>
         <h2>Answer:</h2>
         <p>{{ answer }}</p>
     {% endif %}
